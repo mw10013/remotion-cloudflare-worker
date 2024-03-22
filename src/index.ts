@@ -1,4 +1,4 @@
-import { getFunctions, renderMediaOnLambda } from '@remotion/lambda/client';
+import { renderMediaOnLambda } from '@remotion/lambda/client';
 
 export interface Env {
 	REMOTION_AWS_ACCESS_KEY_ID: string;
@@ -14,7 +14,6 @@ export default {
 			serveUrl: 'https://remotionlambda-qg35eyp1s1.s3.eu-central-1.amazonaws.com/sites/bf2jrbfkw',
 			codec: 'h264',
 		});
-
 		return new Response(JSON.stringify({ result }));
 	},
 };
