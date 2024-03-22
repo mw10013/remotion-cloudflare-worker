@@ -13,5 +13,6 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "@remotion/lambda": "4.0.128"
   }
 }
